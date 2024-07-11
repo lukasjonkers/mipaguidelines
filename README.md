@@ -1,1 +1,3 @@
-# mipaguidelines
+**Code to analyse results of survey on guidelines for marine microfossil abundance data**
+
+R code (`guidelines_code.R`) to analyse results of an online survey on guidelines to increase the reusability of marine microfossil assemblage data. The code is used to calculate some simple statistics about the responses and analyse differences towards data stewardship among researchers of different career stages and different taxonomic expertise. It also includes a rough analysis of how well legacy data sets adhere to community guidelines based on the survey and scripts to make the figures for a manuscript in preparation.
