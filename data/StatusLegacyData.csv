@@ -1,0 +1,53 @@
+question,qgroup,BF1,BF2,BF3,BF4,BF5,CC1,CC2,CC3,CC4,CC5,Dia1,Dia2,Dia3,Dia4,Dia5,Din1,Din2,Din3,Din4,Din5,Ost1,Ost2,Ost3,Ost4,Ost5,PF1,PF2,PF3,PF4,PF5,Rad1,Rad2,Rad3,Rad4,Rad5
+url,NA,https://doi.pangaea.de/10.1594/PANGAEA.760662,https://doi.pangaea.de/10.1594/PANGAEA.53157,https://doi.pangaea.de/10.1594/PANGAEA.142101,https://doi.pangaea.de/10.1594/PANGAEA.884573,https://doi.pangaea.de/10.1594/PANGAEA.943880,https://doi.pangaea.de/10.1594/PANGAEA.51924,https://doi.pangaea.de/10.1594/PANGAEA.57925,https://doi.pangaea.de/10.1594/PANGAEA.819718,https://doi.pangaea.de/10.1594/PANGAEA.867495,https://doi.pangaea.de/10.1594/PANGAEA.933678,https://doi.pangaea.de/10.1594/PANGAEA.55018,https://doi.pangaea.de/10.1594/PANGAEA.53378,https://doi.pangaea.de/10.1594/PANGAEA.55660,https://doi.pangaea.de/10.1594/PANGAEA.77479,https://doi.pangaea.de/10.1594/PANGAEA.77363,https://doi.pangaea.de/10.1594/PANGAEA.779997,https://doi.pangaea.de/10.1594/PANGAEA.126417,https://doi.pangaea.de/10.1594/PANGAEA.784344,https://doi.pangaea.de/10.1594/PANGAEA.907715,https://doi.pangaea.de/10.1594/PANGAEA.964212,https://doi.pangaea.de/10.1594/PANGAEA.752266,https://doi.pangaea.de/10.1594/PANGAEA.57422,https://doi.pangaea.de/10.1594/PANGAEA.667644,https://doi.pangaea.de/10.1594/PANGAEA.763282,https://doi.pangaea.de/10.1594/PANGAEA.735534,https://doi.pangaea.de/10.1594/PANGAEA.51613,https://doi.pangaea.de/10.1594/PANGAEA.134152,https://doi.pangaea.de/10.1594/PANGAEA.54985,https://doi.pangaea.de/10.1594/PANGAEA.114649,https://doi.pangaea.de/10.1594/PANGAEA.902031,https://doi.pangaea.de/10.1594/PANGAEA.817950,https://doi.pangaea.de/10.1594/PANGAEA.746523,https://doi.pangaea.de/10.1594/PANGAEA.760330,https://doi.pangaea.de/10.1594/PANGAEA.60263,https://doi.pangaea.de/10.1594/PANGAEA.777633
+fossil_group,NA,benthic foraminifera,benthic foraminifera,benthic foraminifera,benthic foraminifera,benthic foraminifera,coccolithophores,coccolithophores,coccolithophores,coccolithophores,coccolithophores,diatoms,diatoms,diatoms,diatoms,diatoms,dinocysts,dinocysts,dinocysts,dinocysts,dinocysts,ostracods,ostracods,ostracods,ostracods,ostracods,planktonic foraminifera,planktonic foraminifera,planktonic foraminifera,planktonic foraminifera,planktonic foraminifera,radiolaria,radiolaria,radiolaria,radiolaria,radiolaria
+Goal,Study description,no,no,no,yes,yes,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Summary/abstract,Study description,yes,no,no,yes,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,yes,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no
+Site name,Site information,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Site location,Site information,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Cruise or expedition,Site information,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,yes,yes
+Collection method,Site information,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Collection date,Site information,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,no,yes,yes,yes,yes,yes,yes,no,no,yes,yes,yes,yes,yes,no,yes,yes,yes,no,yes,yes
+Chronological details,Site information,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+Environmental setting,Site information,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Depositional setting,Site information,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+Links to ancilary data,Site information,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Repository,Site information,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Storage,Sample handling,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Preparation,Sample handling,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Sieve mesh size and unit,Sample handling,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Mounting medium,Sample handling,NA,NA,NA,NA,NA,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,no,no,no,no
+Size of coverslip,Sample handling,NA,NA,NA,NA,NA,no,no,NA,no,no,no,no,no,no,no,no,no,no,no,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,yes,no,no,no
+Split,Sample data,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Counting method,Counting method,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Count magnification,Counting method,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Count marker,Counting method,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,yes,no,yes,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Marker details,Counting method,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,no,no,no,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Taxonomic concept,Taxonomic details,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Lumping explanation,Taxonomic details,NA,NA,NA,no,no,NA,no,yes,NA,no,no,no,yes,NA,no,no,yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,yes,yes,no,NA,NA,NA,NA,NA
+Variant mapping explanation,Taxonomic details,NA,NA,NA,NA,NA,no,NA,NA,yes,NA,NA,NA,no,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,no,no,no,no,NA,NA,NA,NA,NA
+Highest taxonomic resolution,Taxonomic details,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,yes,yes,no,yes,yes,yes,yes,yes
+Unique names,Taxonomic details,yes,yes,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,yes,no,yes,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Group specific requirements,Taxonomic details,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,yes,yes,no,yes,yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Cyst-motile link,Taxonomic details,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,no,no,no,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Link to external ontology,Taxonomic details,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Zero abundances,Abundance data,no,no,yes,yes,no,yes,no,no,no,yes,no,no,yes,yes,yes,no,yes,yes,NA,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no
+Unidentified specimens,Abundance data,no,yes,no,no,no,no,no,yes,yes,no,no,no,no,yes,no,yes,yes,no,no,no,yes,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no
+Indication of completeness,Taxonomic details,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Reworked,Abundance data,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Source,Attribution,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Contributor,Attribution,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
+Institution,Attribution,no,no,no,no,no,no,no,no,yes,no,no,yes,no,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no
+Project,Attribution,yes,yes,yes,no,no,yes,no,no,yes,no,yes,yes,yes,no,no,yes,no,yes,no,yes,yes,yes,no,yes,no,no,no,yes,yes,no,yes,yes,yes,yes,yes
+Funder,Attribution,no,no,no,no,no,no,no,no,yes,no,no,yes,yes,no,no,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no
+Size fraction incl. unit,Abundance data,no,yes,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,yes,yes,yes,no,yes,yes,yes,yes,no,no,yes,no,no,no
+Specimen state,Abundance data,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Sample preservation,Abundance data,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,yes,no,no,yes
+Sample mass incl. unit,Sample data,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no
+Dry bulk density incl. unit,Sample data,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+Top and bottom depth incl. unit,Sample data,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no
+Sedimentary unit,Sample data,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no,yes
+Sample ID,Sample data,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,yes,no,yes,yes,yes,yes,yes,no,no,no,no,no,no,no,no,yes,yes,no,no,yes
+Sample age and unit,Sample data,no,no,no,no,yes,no,no,no,yes,yes,no,no,no,no,no,no,no,no,yes,yes,no,no,no,yes,no,no,no,no,no,yes,no,no,no,no,no
+Raw counts,Abundance data,no,no,yes,yes,no,no,NA,no,no,no,no,no,no,yes,no,no,yes,NA,yes,yes,yes,yes,yes,yes,yes,no,no,no,no,no,NA,NA,no,no,NA
+Qualitative classification,Taxonomic details,NA,NA,NA,NA,NA,NA,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,yes,yes,NA,NA,yes

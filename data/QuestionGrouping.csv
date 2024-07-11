@@ -1,0 +1,52 @@
+short,group
+Goal,Study description
+Summary/abstract,Study description
+Site name,Site information
+Site location,Site information
+Cruise or expedition,Site information
+Collection method,Site information
+Collection date,Site information
+Chronological details,Site information
+Environmental setting,Site information
+Depositional setting,Site information
+Links to ancilary data,Site information
+Repository,Site information
+Storage,Sample handling
+Preparation,Sample handling
+Sieve mesh size and unit,Sample handling
+Mounting medium,Sample handling
+Size of coverslip,Sample handling
+Counting method,Counting method
+Count magnification,Counting method
+Count marker,Counting method
+Marker details,Counting method
+Taxonomic concept,Taxonomic details
+Lumping explanation,Taxonomic details
+Variant mapping explanation,Taxonomic details
+Highest taxonomic resolution,Taxonomic details
+Unique names,Taxonomic details
+Group specific requirements,Taxonomic details
+Cyst-motile link,Taxonomic details
+Link to external ontology,Taxonomic details
+Zero abundances,Abundance data
+Unidentified specimens,Abundance data
+Indication of completeness,Taxonomic details
+Reworked,Abundance data
+Source,Attribution
+Contributor,Attribution
+Institution,Attribution
+Project,Attribution
+Funder,Attribution
+Size fraction incl. unit,Abundance data
+Specimen state,Abundance data
+Sample preservation,Abundance data
+Sample mass incl. unit,Sample data
+Dry bulk density incl. unit,Sample data
+Top and bottom depth incl. unit,Sample data
+Sedimentary unit,Sample data
+Sample ID,Sample data
+Sample age and unit,Sample data
+Raw counts,Abundance data
+Qualitative classification,Taxonomic details
+Career,Demography
+Fossil_group,Demography
