@@ -417,24 +417,27 @@ legacy_plot <- legacy_assess %>%
   mutate(question = ifelse(question %in% pangaeaDefault, paste0(question, "*"), question),
          y.label = ifelse(ranking == "essential" | ranking == "yes" | question == "Split", paste0("***", question, "***"), question),
          qgroup = factor(qgroup,
-                         levels = cats$qgroup[c(6, 7, 2, 5, 3, 8, 4, 1)]
+                         levels = cats$qgroup[c(6, 7, 5, 2, 8, 3, 4, 1)]
          )
   ) %>%
   ggplot(aes(p, y.label, fill = included)) +
   geom_bar(stat = "identity") +
-  geom_text(aes(x = 1, y.label, label = t), inherit.aes = FALSE, colour = "grey20", size = 1.5, hjust = 0, nudge_x = 0.01) +
+  geom_text(aes(x = 1, y.label, label = t), inherit.aes = FALSE, colour = "grey20", size = 2, hjust = 0, nudge_x = 0.01) +
   facet_wrap(~qgroup, scale = "free_y", ncol = 2) +
   theme(axis.text.y = element_markdown()) +
   scale_fill_brewer(palette = "Blues") +
-  scale_x_continuous(labels = scales::percent) +
+  scale_x_continuous(labels = scales::percent,
+                     expand = expansion(mult = c(0.05, 0.1))) +
   labs(y = NULL,
        x = NULL,
        fill = "Included") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom",
+        legend.key.size = unit(4, "mm")
+        )
 
 ggsave(filename = "~/Library/CloudStorage/GoogleDrive-texelwildlife@gmail.com/My Drive/manuscripts/mamipacs/figures/PANGAEA_state.png",
        plot = legacy_plot,
        dpi = "retina", 
        units = "mm", 
-       width = 360, 
-       height = 360)
+       width = 160, 
+       height = 200)
