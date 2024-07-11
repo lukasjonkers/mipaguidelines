@@ -41,7 +41,7 @@ reps <- reps %>%
 
 # View(reps)
 
-write_csv(reps, "data/MiPaSurveyReps.csv")
+write_csv(reps, "data/MiPaSurveyResponses.csv")
 
 # save grouping
 short_questions %>%
@@ -66,7 +66,7 @@ rm(list = ls())
 
 # read data #####
 # read survey responses
-reps <- read_csv("data/MiPaSurveyReps.csv")
+responses <- read_csv("data/MiPaSurveyResponses.csv")
 
 # read question grouping
 qgrouping <- read_csv("data/QuestionGrouping.csv")
@@ -76,7 +76,7 @@ legacy <- read_csv("data/StatusLegacyData.csv")
 #####
 
 # ANALYSIS #####
-reps_long <- reps %>%
+responses_long <- responses %>%
   pivot_longer(
     -c(Career, Fossil_group, Continent),
     names_to = "question",
@@ -91,7 +91,7 @@ reps_long <- reps %>%
 # Demographics
 
 # median and minimum number of answers per question
-reps_long %>%
+responses_long %>%
   drop_na(qgroup) %>%
   group_by(question) %>%
   reframe(
@@ -103,7 +103,7 @@ reps_long %>%
     )
 
 # divsion by career stage
-reps %>%
+responses_long %>%
   group_by(Career) %>%
   summarise(n = n()) %>%
   mutate(
@@ -111,7 +111,7 @@ reps %>%
     )
 
 # by continent
-reps %>%
+responses_long %>%
   group_by(Continent) %>%
   summarise(n = n()) %>%
   mutate(
@@ -119,7 +119,7 @@ reps %>%
     )
 
 # by fossil group
-reps %>%
+responses_long %>%
   group_by(Fossil_group) %>%
   summarise(n = n()) %>%
   mutate(
@@ -130,7 +130,7 @@ reps %>%
 
 # proportion of each category per question
 # put "no" to "Desired" and "yes" to "Essential"
-props <- reps_long %>%
+props <- responses_long %>%
   drop_na(qgroup) %>%
   group_by(question, qgroup) %>%
   reframe(
@@ -175,7 +175,7 @@ rankings %>%
   reframe(n = n())
 
 # Adjacent category logistic regression
-aclr_in <- reps_long %>%
+aclr_in <- responses_long %>%
   filter(answer != "Yes", answer != "No") %>%
   drop_na() %>%
   mutate(
@@ -257,13 +257,13 @@ theme_set(theme_bw() +
 )
 
 # Demographics
-careerWaffle <- reps %>%
+careerWaffle <- responses %>%
   group_by(Career) %>%
   summarise(n = n()) %>%
   mutate(Career = case_when(Career == "ECR" ~ "ECR: <5 years since PhD",
                             TRUE ~ "ER: >5 years since PhD")) %>%
   ggplot(aes(fill = Career, values = n)) +
-  geom_waffle(colour = 'white', n_rows = ceiling(sqrt(nrow(reps))), size = 0.25, na.rm = FALSE) +
+  geom_waffle(colour = 'white', n_rows = ceiling(sqrt(nrow(responses))), size = 0.25, na.rm = FALSE) +
   coord_equal() +
   scale_fill_brewer(palette = "Blues") +
   labs(title = 'Career stage',
@@ -275,11 +275,11 @@ careerWaffle <- reps %>%
   )
 
 
-geoWaffle <- reps %>%
+geoWaffle <- responses %>%
   group_by(Continent) %>%
   summarise(n = n()) %>%
   ggplot(aes(fill = Continent, values = n)) +
-  geom_waffle(colour = 'white', n_rows = ceiling(sqrt(nrow(reps))), size = 0.25, na.rm = FALSE) +
+  geom_waffle(colour = 'white', n_rows = ceiling(sqrt(nrow(responses))), size = 0.25, na.rm = FALSE) +
   coord_equal() +
   scale_fill_brewer(palette = "Blues") +
   labs(title = 'Geographic origin',
@@ -291,7 +291,7 @@ geoWaffle <- reps %>%
   )
 
 
-groupWaffleInput <- reps %>%
+groupWaffleInput <- responses %>%
   group_by(Fossil_group) %>%
   summarise(n = n()) %>%
   mutate(group = case_when(Fossil_group == 'Other' ~ 1,
@@ -303,16 +303,14 @@ groupWaffleInput <- reps %>%
 groupWaffle <- groupWaffleInput %>%
   mutate(Fossil_group = factor(Fossil_group, levels = groupWaffleInput$Fossil_group)) %>%
   ggplot(aes(fill = Fossil_group, values = n)) +
-  geom_waffle(colour = 'white', n_rows = ceiling(sqrt(nrow(reps))), size = 0.25, na.rm = FALSE) +
+  geom_waffle(colour = 'white', n_rows = ceiling(sqrt(nrow(responses))), size = 0.25, na.rm = FALSE) +
   coord_equal() +
   scale_fill_brewer(palette = "Blues") +
-  # scale_fill_manual(values = lacroix_palette(lacPallette, n = 7)) +
   labs(title = 'Microfossil group',
        fill = NULL) +
   guides(fill = guide_legend(ncol = 2)) +
   theme_void() +
   theme(legend.position = "bottom",
-        # text = element_text(size = 9),
         plot.title = element_text(hjust = 0.5)
   )
 
@@ -346,7 +344,7 @@ likert_input <- props %>%
 # define plotting order
 ord_likert <- likert_input %>%
   group_by(qgroup, question) %>%
-  summarise(Max = max(xmax)) %>%
+  reframe(Max = max(xmax)) %>%
   arrange(Max, .by_group = TRUE) %>%
   ungroup()
 
