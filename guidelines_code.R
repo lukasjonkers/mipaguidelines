@@ -103,7 +103,7 @@ responses_long %>%
     )
 
 # divsion by career stage
-responses_long %>%
+responses %>%
   group_by(Career) %>%
   summarise(n = n()) %>%
   mutate(
@@ -111,7 +111,7 @@ responses_long %>%
     )
 
 # by continent
-responses_long %>%
+responses %>%
   group_by(Continent) %>%
   summarise(n = n()) %>%
   mutate(
@@ -119,7 +119,7 @@ responses_long %>%
     )
 
 # by fossil group
-responses_long %>%
+responses %>%
   group_by(Fossil_group) %>%
   summarise(n = n()) %>%
   mutate(

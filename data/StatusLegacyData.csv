@@ -29,7 +29,7 @@ Variant mapping explanation,Taxonomic details,NA,NA,NA,NA,NA,no,NA,NA,yes,NA,NA,
 Highest taxonomic resolution,Taxonomic details,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,yes,yes,no,yes,yes,yes,yes,yes
 Unique names,Taxonomic details,yes,yes,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,no,yes,no,yes,yes,yes,yes,no,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
 Group specific requirements,Taxonomic details,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,yes,yes,no,yes,yes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-Cyst-motile link,Taxonomic details,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,no,no,no,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Link parallel taxonomies,Taxonomic details,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,no,no,no,no,no,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Link to external ontology,Taxonomic details,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes
 Zero abundances,Abundance data,no,no,yes,yes,no,yes,no,no,no,yes,no,no,yes,yes,yes,no,yes,yes,NA,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no
 Unidentified specimens,Abundance data,no,yes,no,no,no,no,no,yes,yes,no,no,no,no,yes,no,yes,yes,no,no,no,yes,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no
