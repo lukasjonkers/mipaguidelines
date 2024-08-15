@@ -7,63 +7,6 @@ library(waffle)
 library(patchwork)
 library(ggtext)
 
-# prep data, remove prior to publication ####
-library(googlesheets4)
-library(readxl)
-
-GoogleReps <- read_sheet('https://docs.google.com/spreadsheets/d/1Lka0AOU6q-7mZt2g7MhyBH8zPsip4wuuqladPrJLQ1I/edit?resourcekey#gid=463587945')
-short_questions <- read_sheet('https://docs.google.com/spreadsheets/d/1Lka0AOU6q-7mZt2g7MhyBH8zPsip4wuuqladPrJLQ1I/edit?resourcekey#gid=463587945', sheet = 'Sheet1')
-
-continents <- read_sheet('https://docs.google.com/spreadsheets/d/1FWfUm7wNjbAYR0vuQzd1seOMvpYc96bXxh8w2OYE43g/edit#gid=0')
-
-names(GoogleReps) <- short_questions$short
-
-# merge with response collected using MS forms
-MSFormsReps <- read_xlsx('Marine micropalaeontological data requirements.xlsx') %>%
-  select(all_of(short_questions$excelname[!is.na(short_questions$excelname)]))
-
-names(MSFormsReps) <- short_questions$short[!is.na(short_questions$excelname)]
-
-# MSFormsReps$Country %in% continents$Country
-
-# merge 
-reps <- bind_rows(GoogleReps, MSFormsReps)
-
-reps <- reps %>% 
-  mutate(
-    Career = case_when(Career == 'Yes' ~ 'ECR',
-                       Career == 'No' ~ 'ER'),
-    Continent = continents$Continent[match(Country, continents$Country)]
-    )
-
-reps <- reps %>%
-  select(-c("Timestamp", "Country", "First_name", "Last_name", "email"))
-
-# View(reps)
-
-write_csv(reps, "data/MiPaSurveyResponses.csv")
-
-# save grouping
-short_questions %>%
-  select(short, group) %>%
-  filter(!short %in% c("Country", "First_name", "Last_name", "email")) %>%
-  drop_na() %>%
-  write_csv(., "data/QuestionGrouping.csv")
-
-# read pangaea assessment
-PANGAEA_raw <- read_sheet("https://docs.google.com/spreadsheets/d/1VrPC7Y0OORy5ocENicCMWvS2GQYscy3cKuEZXJbA5Ps/edit#gid=0", skip = 6, n_max = 60)
-
-PANGAEA_raw %>%
-  drop_na(question) %>%
-  mutate(across(everything(), ~gsub("n/a", NA_character_, .))) %>%
-  select(-Section, -Description, -CC6) %>%
-  write_csv(., "data/StatusLegacyData.csv")
-  
-rm(list = ls())
-
-# publish from here on
-#####
-
 # read data #####
 # read survey responses
 responses <- read_csv("data/MiPaSurveyResponses.csv")
@@ -316,12 +259,12 @@ groupWaffle <- groupWaffleInput %>%
 
 demoPLot <- careerWaffle + geoWaffle + groupWaffle + plot_annotation(tag_levels = "a")
 
-ggsave(filename = "~/Library/CloudStorage/GoogleDrive-texelwildlife@gmail.com/My Drive/manuscripts/mamipacs/figures/demo.png",
+ggsave(filename = "demo.png",
        plot = demoPLot,
        dpi = "retina", 
        units = "mm", 
-       width = 360, 
-       height = 180)
+       width = 270, 
+       height = 135)
 
 # Likert plots
 # make input
@@ -400,7 +343,7 @@ map(cats$qgroup, function(x){
          y = NULL,
          x = NULL)
   
-  ggsave(paste0("~/Library/CloudStorage/GoogleDrive-texelwildlife@gmail.com/My Drive/manuscripts/mamipacs/figures/", x, ".png"),
+  ggsave(paste0(x, ".png"),
          plt, 
          dpi = "retina", 
          height = (cats$n[cats$qgroup == x] + 0.5)* 5 + 10, 
@@ -435,7 +378,7 @@ legacy_plot <- legacy_assess %>%
         legend.key.size = unit(4, "mm")
         )
 
-ggsave(filename = "~/Library/CloudStorage/GoogleDrive-texelwildlife@gmail.com/My Drive/manuscripts/mamipacs/figures/PANGAEA_state.png",
+ggsave(filename = "PANGAEA_state.png",
        plot = legacy_plot,
        dpi = "retina", 
        units = "mm", 
