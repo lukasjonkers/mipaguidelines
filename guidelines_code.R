@@ -354,7 +354,7 @@ map(cats$qgroup, function(x){
 # Legacy data plot
 
 # default attributes
-pangaeaDefault <- c("Source", "Link to external ontology", "Contributor", "Links to ancilary data")
+pangaeaDefault <- c("Site name", "Site location", "Source", "Link to external ontology", "Contributor", "Links to ancilary data", "Collection method")
 
 legacy_plot <- legacy_assess %>%
   mutate(question = ifelse(question %in% pangaeaDefault, paste0(question, "*"), question),
